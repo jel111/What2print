@@ -1,12 +1,12 @@
 # What2Print 
 
-   Site for sharing a popular model of the week. I search a lot for models to print and 
-   I am lost as to what I should print that day. Sometimes I wish that decision was taken from me.
-   I know there are the trends section of the major model sharinfg sites but now with the selling of 
-   models and everybody and his brother trying to make money it's easy to click around for quite a while
-   only to see a model you like and then realize you have to pay for it. On this site we will only have free
-   models and if not it will be stated first thing.
- 
+   Site for sharing a popular model of the week. I search for models to print and 
+   get lost trying to find what I want to print that day. Sometimes I wish that decision was taken from me.
+   I know there is a trends section on the major model sharinfg sites but now with all the selling of 
+   models and everybody and his brother trying to make money it's easy to click around for quite a while.
+   I hate when I see a model I like and then realize I have to pay for it. On this site you will know right
+   away it's a paid model. I don't buy models very much so you will probably rarely see one. Print till your
+   spool is empty and your dreams are fulfilled!
 
 
 
