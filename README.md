@@ -1,4 +1,17 @@
-# Astro Starter Kit: Basics
+# What2Print 
+
+   Site for sharing a popular model of the week. I search a lot for models to print and 
+   I am lost as to what I should print that day. Sometimes I wish that decision was taken from me.
+   I know there are the trends section of the major model sharinfg sites but now with the selling of 
+   models and everybody and his brother trying to make money it's easy to click around for quite a while
+   only to see a model you like and then realize you have to pay for it. On this site we will only have free
+   models and if not it will be stated first thing.
+ 
+
+
+
+
+## Made from the Astro Starter Kit: Basics
 
 ```sh
 npm create astro@latest -- --template basics
