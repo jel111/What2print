@@ -1,18 +1,16 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
-const posts = await Astro.glob('../pages/printTuesday/posts/*.md');
 ---
 
 <Layout title="What2Print Print Tuesday">
-
+    
 	<main>
-		<h1><span class="text-gradient">What2Print</span><br>Print Tuesday</h1>
+		<h1><span class="text-gradient">What2Print</span><br>3D Printers</h1>
 		<p class="instructions">
-			Every Tuesday we print a new model that interests us. We scour the web so you don't have to. Just come back every week click download and print!
+			Read about the 3D printers we trust and recommend! We’ve tried a variety of models trying to find the best options for our printing needs. Dive into our journey to learn about each printer’s strengths, quirks, and uses, from our point of view.
 		</p>
-		
-		<div class="link-card-grid">
+        <!-- <div class="link-card-grid">
 			{posts.sort((a, b) => +new Date(b.frontmatter.date) - +new Date(a.frontmatter.date)).map((post) => (
 				<Card
 					href={post.url}
@@ -20,10 +18,10 @@ const posts = await Astro.glob('../pages/printTuesday/posts/*.md');
 					body={post.frontmatter.description}
 				/>
 			))}
-		</div>
+		</div> -->
+		
 	</main>
 </Layout>
-
 <style>
 	main {
 		margin: auto;
@@ -82,3 +80,4 @@ const posts = await Astro.glob('../pages/printTuesday/posts/*.md');
 		padding: 0;
 	}
 </style>
+

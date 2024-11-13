@@ -1,18 +1,17 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
-const posts = await Astro.glob('../pages/printTuesday/posts/*.md');
 ---
 
-<Layout title="What2Print Print Tuesday">
+<Layout title="Filaments!">
 
+    
 	<main>
-		<h1><span class="text-gradient">What2Print</span><br>Print Tuesday</h1>
+		<h1><span class="text-gradient">What2Print</span><br>Filaments!</h1>
 		<p class="instructions">
-			Every Tuesday we print a new model that interests us. We scour the web so you don't have to. Just come back every week click download and print!
+			Here, you’ll find a curated list of filaments we’ve tested and recommend. These are the materials we’ve personally used and enjoyed, chosen for their quality, reliability, and standout performance in our 3D printing projects.
 		</p>
-		
-		<div class="link-card-grid">
+		<!-- <div class="link-card-grid">
 			{posts.sort((a, b) => +new Date(b.frontmatter.date) - +new Date(a.frontmatter.date)).map((post) => (
 				<Card
 					href={post.url}
@@ -20,7 +19,8 @@ const posts = await Astro.glob('../pages/printTuesday/posts/*.md');
 					body={post.frontmatter.description}
 				/>
 			))}
-		</div>
+		</div> -->
+		
 	</main>
 </Layout>
 

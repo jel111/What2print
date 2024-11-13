@@ -1,17 +1,24 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+const posts = await Astro.glob('../pages/blog/posts/*.md');
 ---
-
 <Layout title="What2Print Blog">
-	<a href="/">Home</a>
-	<a href="/printTuesday/">Print Tuesday</a>
-    <a href="/blog/">Blog</a>
+
 	<main>
 		<h1><span class="text-gradient">What2Print</span><br>Blog</h1>
 		<p class="instructions">
 			Articles posted here are about what is interesting to us in the 3D Printing Universe. Most of the posts will be geared to the Hobbyist side of 3d printing because that's what we are!
 		</p>
+		<ul class="link-card-grid">
+			{posts.map((post) => (
+				<Card
+					href={post.url}
+					title={post.frontmatter.title}
+					body={post.frontmatter.description || 'Read more...'}
+				/>
+			))}
+		</ul>
 		
 	</main>
 </Layout>

@@ -1,12 +1,13 @@
 ---
 title: 'My Fav printer'
-pubDate: 2024-02-22
+pubDate: 2024-10-22
 description: 'This is my favorite 3d printer.'
 author: 'What2Print'
 image:
     url: 'https://docs.astro.build/assets/full-logo-light.png'
     alt: 'The full Astro logo.'
 tags: ["astro", "blogging", "learning in public"]
+layout: ../../../layouts/BlogPost.astro
 ---
 # My First Blog Post
 
