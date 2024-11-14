@@ -2,11 +2,13 @@
 import Layout from './Layout.astro';
 
 const { frontmatter } = Astro.props;
+const { image } = Astro.props;
 ---
 
 <Layout title={frontmatter.title}>
     <article class="blog-post">
         <h1>{frontmatter.title}</h1>
+        {image && <img src={image} alt="Featured Image" />}
         <div class="post-content">
             <slot />
         </div>

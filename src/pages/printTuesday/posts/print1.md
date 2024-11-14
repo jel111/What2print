@@ -3,7 +3,7 @@ title: "Bambu Christmas Cabin"
 description: "With the holiday season right around the corner, I've been getting into the Christmas spirit in the best way I know—3D printing!"
 pubDate: "2024-11-12"
 author: "3D Print Help"
-image: "/path/to/image.jpg"
+image: "/images/printTuesday/bambuXmasCabin.png"
 layout: "../../../layouts/BlogPost.astro"
 ---
 

@@ -5,11 +5,28 @@ import Card from '../components/Card.astro';
 
 <Layout title="Welcome to What2Print.">
 	<main>
-
 		<h1>Welcome to <span class="text-gradient">What2Print</span></h1> 
 		<p class="instructions">
-			Discover endless 3D printing possibilities at What2Print, your ultimate destination for popular and curated 3D models. Say goodbye to endless searches and hello to hassle-free printing with our carefully selected collection..
+			We understand that the world of 3D printing can be overwhelming, especially with the endless possibilities all over the interwebs. That's why we've created a dedicated space where you can discover what to print today without the hassle of endless searching. Every week, we curate a selection of exciting and innovative projects tailored for makers of all skill levels. Whether you're looking for a fun weekend project, a practical item for your home, or something to challenge your skills, we've got you covered. Join our community of creators and let us inspire your next print!
+
 		</p>
+
+		<!-- New image container with captions -->
+		<div class="image-container">
+			<div class="image-item">
+				<img src="/images/home/wireMount.png" alt="Wire Mount 3d Print" />
+				<p class="caption">Model by <a href="https://www.printables.com/model/1052791-electric-wire-wall-mount-collection-8-variations-p">VC Design</a></p>
+			</div>
+			<div class="image-item">
+				<img src="/images/home/snowflakeVase.png" alt="Snowflake Vase 3d Print" />
+				<p class="caption">Model by <a href="https://thangs.com/designer/Decorartor">Decorater</a></p>
+			</div>
+			<div class="image-item">
+				<img src="/images/home/roverKit.png" alt="Rover Kit 3d Print" />
+				<p class="caption">Model by <a href="https://makerworld.com/en/@DavyJonesJr">Davy Jones</a></p>
+			</div>
+		</div>
+
 		<ul role="list" class="link-card-grid">
 			<Card
 				href="/printTuesday/"
@@ -34,7 +51,7 @@ import Card from '../components/Card.astro';
 			<Card
 				href="/tutorials/"
 				title="Tutorials"
-				body="Tutorials getting started with 3d printing as well as advanced and intermediate topics."
+				body="Tutorials at all levels for the 3d printing Maker and Designer."
 			/>
 		</ul>
 	</main>
@@ -96,5 +113,30 @@ import Card from '../components/Card.astro';
 		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
 		gap: 2rem;
 		padding: 0;
+	}
+
+	/* image container and captions */
+	.image-container {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 2rem;
+	}
+
+	.image-item {
+		text-align: center;
+		width: 30%; /* Adjust width as needed */
+	}
+
+	.image-item img {
+		width: 100%;
+		height: 200px;
+		object-fit: cover;
+		border-radius: 8px;
+	}
+
+	.caption {
+		margin-top: 0.5rem;
+		font-size: 0.9rem;
+		color: #ccc; /* Adjust color for better readability */
 	}
 </style>

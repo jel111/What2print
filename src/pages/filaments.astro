@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+
+const posts = await Astro.glob('../pages/filaments/posts/*.md');
 ---
 
 <Layout title="Filaments!">
@@ -11,7 +13,7 @@ import Card from '../components/Card.astro';
 		<p class="instructions">
 			Here, you’ll find a curated list of filaments we’ve tested and recommend. These are the materials we’ve personally used and enjoyed, chosen for their quality, reliability, and standout performance in our 3D printing projects.
 		</p>
-		<!-- <div class="link-card-grid">
+		<div class="link-card-grid">
 			{posts.sort((a, b) => +new Date(b.frontmatter.date) - +new Date(a.frontmatter.date)).map((post) => (
 				<Card
 					href={post.url}
@@ -19,7 +21,7 @@ import Card from '../components/Card.astro';
 					body={post.frontmatter.description}
 				/>
 			))}
-		</div> -->
+		</div>
 		
 	</main>
 </Layout>
