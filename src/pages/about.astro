@@ -1,0 +1,74 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+const posts = await Astro.glob('../pages/blog/posts/*.md');
+---
+<Layout title="What2Print Blog">
+    <main>
+    <h2>Welcome to What2Print, your daily destination for 3D printing inspiration! </h1>
+    <p>
+        As the founder of What2Print, I've been immersed in the world of 3D printing for over a decade. My journey began with a serendipitous find at a garage sale - a Lulzbot AO 101 printer that sparked a passion that has only grown stronger over the years. Since then, I've owned and operated numerous printers, each one teaching me valuable lessons and fueling my enthusiasm for this ever-evolving technology.
+        
+        My experience extends beyond personal projects. I currently manage 3dprint.help, a resource dedicated to assisting fellow makers with their 3D printing challenges. Additionally, I oversee a 3D print lab at a local MakerSpace, where I have the privilege of introducing newcomers to the wonders of additive manufacturing and helping experienced makers push the boundaries of their creativity. Through teaching classes and troubleshooting printers for those struggling to get their machines up and running, I've gained a deep understanding of the common hurdles faced by 3D printing enthusiasts. This wealth of knowledge and hands-on experience is what drives What2Print's mission: to simplify your 3D printing journey by providing daily, curated project ideas that inspire and excite. Whether you're a beginner looking for your first print or a seasoned maker seeking your next challenge, What2Print is here to spark your creativity and keep your printer humming with exciting new projects every day.
+        </p>
+    </main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	.astro-a {
+		position: absolute;
+		top: -32px;
+		left: 50%;
+		transform: translatex(-50%);
+		width: 220px;
+		height: auto;
+		z-index: -1;
+	}
+	h1 {
+		font-size: 4rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.instructions {
+		margin-bottom: 2rem;
+		border: 1px solid rgba(var(--accent-light), 25%);
+		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
+		padding: 1.5rem;
+		border-radius: 8px;
+	}
+	.instructions code {
+		font-size: 0.8em;
+		font-weight: bold;
+		background: rgba(var(--accent-light), 12%);
+		color: rgb(var(--accent-light));
+		border-radius: 4px;
+		padding: 0.3em 0.4em;
+	}
+	.instructions strong {
+		color: rgb(var(--accent-light));
+	}
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 2rem;
+		padding: 0;
+	}
+</style>

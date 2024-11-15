@@ -3,7 +3,7 @@ title: "Polymaker Filament in 3D Printing"
 description: "When it comes to 3D printing materials, Polymaker filament stands out!"
 pubDate: "2024-11-13"
 author: "3D Print Help"
-image: "/path/to/image.jpg"
+image: "/images/filament/Polymkaer_Gold.png"
 layout: "../../../layouts/BlogPost.astro"
 ---
 

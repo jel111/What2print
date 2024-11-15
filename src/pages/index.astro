@@ -48,13 +48,22 @@ import Card from '../components/Card.astro';
 				title="Blog"
 				body="Things we are excited about in the 3d printing community"
 			/>
-			<Card
+			<!-- <Card
 				href="/tutorials/"
 				title="Tutorials"
 				body="Tutorials at all levels for the 3d printing Maker and Designer."
-			/>
+			/> -->
 		</ul>
 	</main>
+	<footer>
+		<div class="footer-content">
+			<p>&copy; 2024 What2Print. All rights reserved.</p>
+			<ul class="footer-links">
+				<li><a href="/about/">About Us</a></li>
+				<li><a href="/contact/">Contact</a></li>
+			</ul>
+		</div>
+	</footer>
 </Layout>
 
 <style>
@@ -138,5 +147,30 @@ import Card from '../components/Card.astro';
 		margin-top: 0.5rem;
 		font-size: 0.9rem;
 		color: #ccc; /* Adjust color for better readability */
+	}
+
+	.footer-content {
+		text-align: center;
+		padding: 1rem;
+		background-color: #333; /* Adjust background color as needed */
+		color: #fff; /* Adjust text color as needed */
+	}
+
+	.footer-links {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		justify-content: center;
+		gap: 1rem;
+	}
+
+	.footer-links a {
+		color: #fff; /* Adjust link color as needed */
+		text-decoration: none;
+	}
+
+	.footer-links a:hover {
+		text-decoration: underline;
 	}
 </style>

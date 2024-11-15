@@ -2,13 +2,15 @@
 import Layout from './Layout.astro';
 
 const { frontmatter } = Astro.props;
-const { image } = Astro.props;
+const { image } = frontmatter;
 ---
 
 <Layout title={frontmatter.title}>
     <article class="blog-post">
         <h1>{frontmatter.title}</h1>
-        {image && <img src={image} alt="Featured Image" />}
+        <div class="postImage">
+        {image && <img src={image} alt="Featured Image" class="featured-image"/>}
+        </div>
         <div class="post-content">
             <slot />
         </div>
@@ -32,4 +34,10 @@ const { image } = Astro.props;
     .post-content {
         line-height: 1.6;
     }
+    .featured-image {
+            display: block;
+            margin: 0 auto; /* Centers the image */
+            max-width: 100%; /* Ensures the image doesn't exceed the container width */
+            height: auto; /* Maintains aspect ratio */
+        }
 </style> 
